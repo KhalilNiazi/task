@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SqL_DataBase.Sql_Database_Activity">
+
+
+
+    <Button
+        android:id="@+id/viedetails"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="view Detail"
+        android:background="@drawable/roundbtn"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UPDATEbtn" />
+
+
+    <Button
+        android:id="@+id/uplbn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundbtn"
+        android:backgroundTint="@color/blue"
+        android:text="Insert Data"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mardsds" />
+
+    <Button
+        android:id="@+id/UPDATEbtn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundbtn"
+        android:backgroundTint="@color/blue"
+        android:text="update Data"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mardsds" />
+
+    <EditText
+        android:id="@+id/sids"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundshape"
+        android:drawableStart="@drawable/baseline_perm_identity_24"
+        android:drawablePadding="12dp"
+        android:drawableTint="@color/blue"
+        android:ems="10"
+        android:hint="Id"
+        android:inputType="numberSigned"
+        android:paddingLeft="21dp"
+        android:textColor="@color/blue"
+        android:textColorHint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/sname"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundshape"
+
+        android:drawableStart="@drawable/baseline_perm_identity_24"
+        android:drawablePadding="12dp"
+        android:drawableTint="@color/blue"
+        android:hint="Name"
+        android:paddingLeft="21dp"
+        android:textColor="@color/blue"
+        android:textColorHint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sids" />
+
+
+    <EditText
+        android:id="@+id/mardsds"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundshape"
+        android:drawableStart="@drawable/baseline_library_books_24"
+        android:drawablePadding="12dp"
+        android:drawableTint="@color/blue"
+        android:hint="Marks"
+        android:inputType="numberSigned"
+        android:paddingLeft="21dp"
+        android:textColor="@color/blue"
+        android:textColorHint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surna" />
+
+    <EditText
+        android:id="@+id/surna"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundshape"
+        android:drawableStart="@drawable/baseline_class_24"
+        android:drawablePadding="12dp"
+        android:drawableTint="@color/blue"
+        android:hint="SurName"
+        android:paddingLeft="21dp"
+        android:textColor="@color/blue"
+        android:textColorHint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sname" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Fill Detail"
+
+        android:textColor="@color/blue"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/sqlrec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UPDATEbtn"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

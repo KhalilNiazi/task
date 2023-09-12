@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        app:cardElevation="10dp"
+    android:id="@+id/dialog_"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:hint="Name"
+            android:layout_marginTop="40dp"
+
+            android:textColorHint="@color/pivk"
+            android:textColor="@color/pivk"
+            android:id="@+id/namde"/>
+
+    <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:hint="Phone Number"
+            android:layout_marginTop="100dp"
+
+            android:textColorHint="@color/pivk"
+            android:textColor="@color/pivk"
+            android:id="@+id/phodne"/>
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/pivk"
+            android:text="Upload Data"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="160dp"
+             android:textColor="@color/white"
+            android:id="@+id/uploasd"/>
+
+    </androidx.cardview.widget.CardView>
