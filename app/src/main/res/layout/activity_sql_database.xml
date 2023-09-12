@@ -8,7 +8,7 @@
 
 
 
-    <Button
+ <!--   <Button
         android:id="@+id/viedetails"
         android:layout_width="290dp"
         android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/UPDATEbtn" />
 
-
+-->
     <Button
         android:id="@+id/uplbn"
         android:layout_width="120dp"
